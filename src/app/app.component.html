@@ -1,18 +1,28 @@
 <nav class="navbar">
   
   <h1>
-    Angular for beginners
+    Angular templates
   </h1>
 
   <ul>
-    <li><a [routerLink]="['/']" routerLinkActive="router-link-active" [routerLinkActiveOptions]="{ exact : true}">Home</a></li>
-    <li><a [routerLink]="['/back']" routerLinkActive="router-link-active" >Back</a></li>
-    <li><a [routerLink]="['/next']" routerLinkActive="router-link-active" >Next</a></li>
+    <li><a [routerLink]="['/']" 
+      routerLinkActive="router-link-active" 
+      [routerLinkActiveOptions]="{ exact : true}">
+      Home</a></li>
+      
+    <li><a [routerLink]="['/back']"
+       routerLinkActive="router-link-active" >
+       Back</a></li>
+
+    <li><a [routerLink]="['/next']"
+       routerLinkActive="router-link-active" >
+       Next</a></li>
   </ul>
+  
 </nav>
 
 <div class="container">
-  <div class="card">
+  
     <router-outlet></router-outlet>
-  </div>
+  
 </div>
